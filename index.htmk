@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TuanVinn || ShopSite</title>
+<meta content="Professional WhatsApp bots, custom scripts, and digital solutions by TuanVinn" name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;family=Montserrat:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+
+<body data-theme="dark">
+<div class="theme-toggle" id="themeToggle">
+<i class="fas fa-sun" id="themeIcon"></i>
+</div>
+<div class="loading-screen" id="loading">
+<div class="loading-content">
+<img alt="TuanVinn Logo" class="loading-logo" src="./assets/profile.jpg"/>
+<div class="loading-text">TuanVinn || Loading</div>
+<div class="loading-spinner"></div>
+</div>
+</div>
+<div class="container" id="intro">
+<img alt="TuanVinn Profile" class="profile-img" src="./assets/profile.jpg"/>
+<h1>TuanVinn</h1>
+<div class="typing-text" id="introTyping"></div>
+<div class="button-group">
+<button class="btn btn-primary" onclick="goToMain()">
+<i class="fas fa-rocket"></i> Get Started
+      </button>
+</div>
+</div>
+<div class="container main-content" id="main" style="display:none;">
+<img alt="TuanVinn Profile" class="profile-img" src="./assets/profile.jpg"/>
+<h1>TuanVinn</h1>
+<div class="typing-text" id="mainTyping"></div>
+<div class="social-links">
+<a class="social-link" href="https://wa.me/6285172360191" target="_blank">
+<i class="fab fa-whatsapp"></i>
+<span>WhatsApp Account</span>
+</a>
+<a class="social-link" href="https://whatsapp.com/channel/0029Vakla835Ejy7AaPYie1D0029Vakla835Ejy7AaPYie1D" target="_blank">
+<i class="fab fa-whatsapp"></i>
+<span>WhatsApp Channel</span>
+</a>
+<a class="social-link" href="https://t.me/TuanVinn7" target="_blank">
+<i class="fab fa-telegram"></i>
+<span>Telegram Account</span>
+</a>
+<a class="social-link" href="https://tiktok.com/@TuanVinn7" target="_blank">
+<i class="fab fa-tiktok"></i>
+<span>TikTok Account</span>
+</a>
+<a class="social-link" href="https://youtube.com/@TuanVinn7" target="_blank">
+<i class="fab fa-youtube"></i>
+<span>Youtube Account</span>
+</a>
+<a class="social-link" href="https://instagram.com/@TuanVinn7" target="_blank">
+<i class="fab fa-instagram"></i>
+<span>Instagram Account</span>
+<a class="social-link" href="https://github.com/TuanVinn" target="_blank">
+<i class="fab fa-github"></i>
+<span>GitHub Account</span>
+</a>
+<a class="social-link" href="https://tuanvinn-assistant.tiiny.site/" target="_blank">
+<i class="fas fa-robot"></i>
+<span>Consultant With TuanVinn - Assistant</span>
+</a>
+</a></div>
+<div class="button-group">
+<button class="btn btn-primary" onclick="showSection('shop')">
+<i class="fas fa-shopping-bag"></i> My Digital Products
+      </button>
+<button class="btn btn-primary" onclick="showSection('payment')">
+<i class="fas fa-credit-card"></i> Payment Options
+      </button>
+</div>
+<div class="footer-text">
+<p>"Cinta ini seperti syntax error, terlalu banyak error yang tak bisa kuperbaiki."</p>
+<p style="margin-top: 1rem; font-size: 0.75rem;">© 2025 TuanVinn. All rights reserved.</p>
+</div>
+</div>
+<div class="container main-content" id="shop" style="display:none;">
+<h1 class="section-title">
+<i class="fas fa-store"></i>
+      My Digital Product
+    </h1>
+<div class="product-grid">
+<div class="product-card">
+<div class="product-header">
+<img alt="WhatsApp Bot" class="product-img" src="./assets/script-banner.jpg"/>
+<div class="product-info">
+<h3><i class="fab fa-whatsapp"></i> Script Crimson The Ryujin 1.0</h3>
+<span class="product-category">Pre-Order</span>
+</div>
+</div>
+<p class="product-description">
+          Advanced WhatsApp Bug Bot with AI capabilities for enhanced functionality and automation.
+        </p>
+<div class="product-footer">
+<span class="product-price">From 20.000 IDR</span>
+<button class="btn btn-primary" onclick="toggleOrderOptions(this)">
+<i class="fas fa-shopping-cart"></i> Order Now
+          </button>
+<div class="order-options">
+<a class="btn btn-whatsapp" href="https://wa.me/6285172360191?text=Hi%20TuanVinn,%20I%20want%20to%20order%20Script%20Crimson%20The%20Ryujin%201.0" target="_blank">
+<i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+<a class="btn btn-telegram" href="https://t.me/TuanVinn7" target="_blank">
+<i class="fab fa-telegram"></i> Telegram
+            </a>
+</div>
+</div>
+</div>
+<div class="product-card">
+<div class="product-header">
+<img alt="WhatsApp Bot" class="product-img" src="./assets/script-banner.jpg"/>
+<div class="product-info">
+<h3><i class="fab fa-whatsapp"></i> Script Themis - Assistant 1.0</h3>
+<span class="product-category">Pre-Order</span>
+</div>
+</div>
+<p class="product-description">
+          Semi Multi-Device WhatsApp Bug Bot with AI integration for seamless assistance.
+        </p>
+<div class="product-footer">
+<span class="product-price">From 25.000 IDR</span>
+<button class="btn btn-primary" onclick="toggleOrderOptions(this)">
+<i class="fas fa-shopping-cart"></i> Order Now
+          </button>
+<div class="order-options">
+<a class="btn btn-whatsapp" href="https://wa.me/6285172360191?text=Hi%20TuanVinn,%20I%20want%20to%20order%20Script%20Themis%20-%20Assistant%201.0" target="_blank">
+<i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+<a class="btn btn-telegram" href="https://t.me/TuanVinn7" target="_blank">
+<i class="fab fa-telegram"></i> Telegram
+            </a>
+</div>
+</div>
+</div>
+<div class="product-card">
+<div class="product-header">
+<img alt="Custom Scripts" class="product-img" src="./assets/addon-icon.png"/>
+<div class="product-info">
+<h3><i class="fas fa-code"></i> Custom Scripts</h3>
+<span class="product-category">Available</span>
+</div>
+</div>
+<p class="product-description">
+          Tailored scripts developed to your exact specifications and requirements.
+        </p>
+<div class="product-footer">
+<span class="product-price">From 30.000 IDR</span>
+<button class="btn btn-primary" onclick="toggleOrderOptions(this)">
+<i class="fas fa-shopping-cart"></i> Order Now
+          </button>
+<div class="order-options">
+<a class="btn btn-whatsapp" href="https://wa.me/6285172360191?text=Hi%20TuanVinn,%20I%20want%20to%20order%20Custom%20Scripts" target="_blank">
+<i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+<a class="btn btn-telegram" href="https://t.me/TuanVinn7" target="_blank">
+<i class="fab fa-telegram"></i> Telegram
+            </a>
+</div>
+</div>
+</div>
+<div class="product-card">
+<div class="product-header">
+<img alt="Add Features" class="product-img" src="./assets/addon-icon.png"/>
+<div class="product-info">
+<h3><i class="fas fa-globe"></i> Feature Add-ons</h3>
+<span class="product-category">Available</span>
+</div>
+</div>
+<p class="product-description">
+          Enhance your existing scripts with custom features and functionality.
+        </p>
+<div class="product-footer">
+<span class="product-price">From 5.000 IDR/Feature</span>
+<button class="btn btn-primary" onclick="toggleOrderOptions(this)">
+<i class="fas fa-shopping-cart"></i> Order Now
+          </button>
+<div class="order-options">
+<a class="btn btn-whatsapp" href="https://wa.me/6285172360191?text=Hi%20TuanVinn,%20I%20want%20to%20order%20Feature%20Add-ons" target="_blank">
+<i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+<a class="btn btn-telegram" href="https://t.me/TuanVinn7" target="_blank">
+<i class="fab fa-telegram"></i> Telegram
+            </a>
+</div>
+</div>
+</div>
+</div>
+<button class="btn btn-secondary" onclick="backToMain()">
+<i class="fas fa-arrow-left"></i> Back to Main
+    </button>
+</div>
+<div class="container main-content" id="payment" style="display:none;">
+<h1 class="section-title">
+<i class="fas fa-credit-card"></i>
+      Payment Methods
+    </h1>
+<div class="payment-method">
+<img alt="Dana" class="payment-img" src="./assets/dana.jpg"/>
+<div class="payment-info">
+<h4><i class="fas fa-wallet"></i> Dana Digital Wallet</h4>
+<p>Fast and secure payments via Dana e-wallet</p>
+</div>
+<div>
+<span class="status-badge status-available">Available</span>
+<button class="btn btn-primary" onclick="copyNumber('085172360191')" style="margin-top: 0.5rem; padding: 0.5rem 1rem; font-size: 0.9rem;">
+<i class="fas fa-copy"></i> Copy Number
+        </button>
+</div>
+</div>
+<div class="payment-method">
+<img alt="OVO" class="payment-img" src="./assets/ovo.png"/>
+<div class="payment-info">
+<h4><i class="fas fa-mobile-alt"></i> OVO Digital Payment</h4>
+<p>Coming soon - OVO payment integration</p>
+</div>
+<div>
+<span class="status-badge status-coming-soon">Coming Soon</span>
+<button class="btn btn-secondary" disabled="" style="margin-top: 0.5rem; padding: 0.5rem 1rem; font-size: 0.9rem; opacity: 0.5;">
+<i class="fas fa-clock"></i> Not Available
+        </button>
+</div>
+</div>
+<div class="payment-method">
+<img alt="GoPay" class="payment-img" src="./assets/gopay.png"/>
+<div class="payment-info">
+<h4><i class="fas fa-motorcycle"></i> GoPay Integration</h4>
+<p>Coming soon - GoPay payment support</p>
+</div>
+<div>
+<span class="status-badge status-coming-soon">Coming Soon</span>
+<button class="btn btn-secondary" disabled="" style="margin-top: 0.5rem; padding: 0.5rem 1rem; font-size: 0.9rem; opacity: 0.5;">
+<i class="fas fa-clock"></i> Not Available
+        </button>
+</div>
+</div>
+<div class="qris-section">
+<h3><i class="fas fa-qrcode"></i> Universal QRIS Payment</h3>
+<img alt="QRIS Code" class="qris-code" id="qrisImage" src="./assets/qris.jpg"/>
+<p>Scan this QR code with any Indonesian e-wallet app for instant payment</p>
+<button class="btn btn-primary" onclick="downloadQRIS()">
+<i class="fas fa-download"></i> Download QRIS
+      </button>
+</div>
+<button class="btn btn-secondary" onclick="backToMain()">
+<i class="fas fa-arrow-left"></i> Back to Main
+    </button>
+</div>
+<div class="modal" id="orderModal">
+<div class="modal-content">
+<button class="modal-close" onclick="closeModal()">×</button>
+<h3 class="modal-title">Choose Order Method</h3>
+<div class="modal-body">
+<p>Please select your preferred method to place an order:</p>
+</div>
+<div class="modal-footer">
+<a class="btn btn-whatsapp" href="#" id="whatsappOrder">
+<i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+<a class="btn btn-telegram" href="#" id="telegramOrder">
+<i class="fab fa-telegram"></i> Telegram
+        </a>
+</div>
+</div>
+</div>
+<audio id="audio" preload="auto" src="./assets/sound.mp3"></audio>
+<audio id="clickSound" preload="auto" src="./assets/sound.mp3"></audio>
+<script defer="" src="script.js"></script>
+</body>
+</html>
